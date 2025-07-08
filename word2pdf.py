@@ -44,7 +44,7 @@ if __name__ == '__main__':
     parser.add_argument('input_file', type=str, help='docx文件路径或文件夹路径')
     args = parser.parse_args()
 
-    input_path = args.input_path
+    input_path = args.input_file
     if  os.path.isfile(input_path):
         """转换单个文件"""
         convert_file(input_path)
